@@ -1,0 +1,40 @@
+.laboratorio{
+    .modal{
+        width: 85%;
+        margin: 3rem auto auto auto;
+        background-color: rgb(200, 200, 200, 50%);
+        border-radius: 1.5rem;
+        h1{
+            padding: 1rem 0;
+            font-size: 2.6rem;
+        }
+    }
+}
+.contenido-laboratorio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4{
+        margin: 1rem 0 3rem 0;
+        font-size: 1.4rem;
+    }
+    img{
+        width: 60%;
+        margin: auto;
+        border-radius: 1rem;
+    }
+}
+.btn-laboratorio{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    button{
+        background-color: transparent;
+        border-radius: 2rem;
+        border-color: $azul-medio;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+}

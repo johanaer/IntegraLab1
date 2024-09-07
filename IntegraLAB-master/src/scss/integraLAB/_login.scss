@@ -1,0 +1,52 @@
+.img-header{
+    padding: 1rem;
+    max-width: 30%;
+}
+.login{
+    text-align: center;
+    h5,h6{
+        margin: 0;
+    }
+    .modal{
+        width: 90%;
+        margin: auto;
+        border-radius: 2rem;
+        background-color: rgb(200, 200, 200, 50%);
+    }
+    .campo-login{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        place-items: center;
+        .icono-formulario{
+            max-width: 10%;
+            // justify-self: center;
+            // place-self: center;
+        }
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: auto;
+            label{
+                text-align: start;
+            }
+            input{
+                width: 90%;
+                border: none;
+                border-radius: 1rem;
+                background-color: $azul-claro;
+            }
+        }
+        margin-bottom: 1rem;
+    }
+    button{
+        margin: 1rem 0;
+    }
+}
+.img-itq{
+    opacity: 60%;
+    max-width: 30%;
+    margin: 2rem auto auto auto;
+    // padding: 1rem;
+}

@@ -1,0 +1,155 @@
+.mostrar-aulas{
+    h1{
+        font-size: 3rem;
+    }
+    .modal-aulas-scroll{
+        height: 40vh;
+        overflow-y: scroll;
+        .aula{
+            border: 1px solid black;
+            width: 80%;
+            margin: 2rem auto;
+            padding: 1rem;
+            p{
+                margin: 0;
+            }
+            .line-one{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                button{
+                    display: flex;
+                    place-self: center;
+                    height: 13%;
+                    width: 13%;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        .dias{
+            button{
+                margin-left: 1rem;
+            }
+        }
+    }
+    .btn-dias{
+        background-color: transparent;
+        border: none;
+        border-radius: 0.5rem;
+    }
+    .btns-info-add{
+        padding: 2rem 0;
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        .info{
+            width: 17%;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin-right: 3rem;
+        }
+        .add{
+            place-self: center;
+            width: 65%;
+        }
+    }
+}
+
+.add-info-aulas{
+    h4{
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    .text-area{
+        width: 80%;
+        margin: auto;
+        textarea{
+            width: 100%;
+            height: 10vh;
+            resize: none;
+            border: 1px solid $azul-oscuro;
+        }
+    }
+    .btn-img{
+        padding: 1rem 0;
+    }
+    .btn-img:last-child {
+        padding: 0;  
+        display: grid;
+        place-items: center;
+        padding: 1rem 0;
+    }
+}
+
+.add-aula{
+    .btn-img{
+        padding: 1rem 0;
+    }
+    .form-add{
+        .campo-add{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            input{
+                border-radius: 1rem;
+            }
+        }
+        .btns-dias{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            button{
+                color: white;
+                background-color: $azul-oscuro;
+                border: none;
+                border-radius: 1rem;
+                width: 11%;
+                height: 11%;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: darken($color: $azul-oscuro, $amount: 50%);
+            }
+        }
+        .panel-horario-add{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 50%;
+            margin: 2rem auto;
+            p{
+                margin: 0;
+            }
+            input{
+                place-self: center;
+                width: 40%;
+                height: 10%;
+                border-radius: 1rem;
+            }
+        }
+    }
+    .btn-add-aula{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 2rem;
+        // place-items: center;
+    }
+    .mantenimiento{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40%;
+        margin: auto auto 2rem auto;
+    }
+    .btn-eliminar-aula{
+        display: grid;
+        place-items: center;
+        padding-bottom: 2rem;
+    }
+}

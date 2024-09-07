@@ -1,0 +1,37 @@
+.index{
+    h1{
+        margin-top: 6rem;
+    }
+    .img-center{
+        margin: 1rem 0 2rem 0;
+        img{
+            width: 50%;
+            margin: auto;
+        }
+    }
+    .modal-index{
+        border-radius: 2rem;
+        background-color: rgb(200, 200, 200, 50%);
+        height: 30rem;
+        p{
+            margin: 0;
+        }
+        .inicio{
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        .inicio:first-child{
+            padding-top: 2rem;
+        }
+        form{
+            margin-top: 2rem;
+            button{
+                width: 70%;
+            }
+        }
+    }
+}
+.img-tecnm{
+    padding: 1rem;
+    max-width: 40%;
+}

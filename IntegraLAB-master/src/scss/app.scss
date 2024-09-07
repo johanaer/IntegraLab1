@@ -1,0 +1,34 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+@import 'base/darkmode';
+
+// Generales
+@import 'integraLAB/generales';
+@import 'integraLAB/index';
+
+// Login
+@import 'integraLAB/login';
+@import 'integraLAB/olvideContraseña';
+
+// Interfaz principal
+@import 'integraLAB/dashboard';
+
+
+// Laboratorios
+@import 'integraLAB/laboratorios';
+
+// Activiades
+@import "integraLAB/actividades";
+
+// Encargados
+@import "integraLAB/encargados";
+@import "integraLAB/encargados_usuario";
+@import "integraLAB/encargados_profesores";
+@import "integraLAB/encargados_materiales";
+
+
+// Admin
+@import "integraLAB/admin/registro_encargados";

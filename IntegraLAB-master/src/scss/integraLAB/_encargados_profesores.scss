@@ -1,0 +1,168 @@
+.mostrar-profesor{
+    h1{
+        font-size: 2.4rem;
+    }
+    h2{
+        font-size: 2.2rem;
+    }
+    .btn-img{
+        padding: 1rem 0 0 0;
+    }
+    .profesores{
+        height: 30vh;
+        width: 80%;
+        margin: auto;
+        overflow-y: scroll;
+        article{
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            place-items: center;
+            margin: 0.5rem 0;
+            img{
+                width: 20%;
+                height: 20%;
+            }
+            p{
+                margin: 0 0 0 1rem;
+            }
+        }
+    }
+    .btns-agregar{
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        .mas{
+            width: 17%;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+.add-profesor{
+    .btn-img{
+        padding: 1rem 0 0 0;
+    }
+    h1{
+        font-size: 2.4rem;
+    }
+    .btn-añadir{
+        display: grid;
+        place-items: center;
+        margin: 2rem auto;
+    }
+}
+.ver-profesor-click{
+    .btn-img{
+        padding: 1rem 0 0 0;
+    }
+    .icon-ver-profesor{
+        display: grid;
+        place-items: center;
+        img{
+            width: 35%;
+        }
+    }
+    .info-profesor{
+        width: 80%;
+        margin: auto;
+        p{
+            margin: 0;
+        }
+        .profesor-icono-editar{
+            display: flex;
+            flex-direction: row;
+            place-items: center;
+            justify-content: space-between;
+            img{
+                width: 10%;
+            }
+        }
+        .lista-profesores{
+            height: 10vh;
+            overflow-y: scroll;
+            article{
+                p:first-child{
+                    cursor: pointer;
+                }
+                @include grid(3, 1rem);
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .btn-añadir{
+        display: grid;
+        place-items: center;
+        margin: 2rem auto;
+    }
+}
+.añadir-aula-profesor{
+    .btn-img{
+        padding: 1rem 0 0 0;
+    }
+    .contenido{
+        width: 85%;
+        margin: auto;
+        .select{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            place-items: center;
+            select{
+                background-color: white;
+                width: 50%;
+                text-align: center;
+            }
+        }
+        .dias{
+            width: 90%;
+            margin: 2rem auto;
+            display: flex;
+            justify-content: space-between;
+            button{
+                color: white;
+                background-color: $azul-oscuro;
+                border: none;
+                border-radius: 1rem;
+                width: 15%;
+                height: 15%;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: darken($color: $azul-oscuro, $amount: 50%);
+            }
+        }
+        .panel-horario{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 50%;
+            margin: 2rem auto;
+            p{
+                margin: 0;
+            }
+            input{
+                place-self: center;
+                width: 40%;
+                height: 10%;
+                border-radius: 1rem;
+            }
+        }
+        .btns-agregar{
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+            .mas{
+                width: 17%;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

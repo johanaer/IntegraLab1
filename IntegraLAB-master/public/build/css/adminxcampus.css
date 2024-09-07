@@ -1,0 +1,245 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: normal;
+  color: #139de3;
+  background: linear-gradient(to bottom, #1370BD, #1369B8 5%, #E3F3FC 20%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px; /* Ajusta el ancho del logo según tus necesidades */
+  height: auto; /* La altura se ajustará proporcionalmente al ancho */
+}
+
+.logo-derecha {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px; /* Ajusta el ancho del logo según tus necesidades */
+  height: auto; /* La altura se ajustará proporcionalmente al ancho */
+}
+
+.card-container {
+  height: 300px;
+  overflow: auto;
+}
+
+.card {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.boton-registro {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 16.666vh;
+  width: 100%;
+  background: linear-gradient(to right, #ff3131, #FF864A);
+  color: #fff;
+  font-size: 4vw;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50% 50% 0 0;
+}
+
+@media (max-width: 767px) {
+  /* Estilos para pantallas pequeñas */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para pantallas medianas */
+}
+
+@media (min-width: 1024px) {
+  /* Estilos para pantallas grandes */
+}
+
+
+.modal {
+  color: #fff;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal.visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.modal h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.modal form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.modal label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.modal input {
+  display: block;
+  width: 92%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.modal .submit {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.eliminar {
+  background-color: #ff3131;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.eliminar:hover {
+  background-color: #ff0000;
+}
+
+
+.modal-content {
+  background: linear-gradient(to right, #ff3131, #FF864A);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal form {
+  background: linear-gradient(to right, #ff3131, #FF864A);
+  color: #fff;
+}
+
+.close {
+  color: #646363;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#notification-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#notification-message {
+  margin-bottom: 10px;
+}
+
+#close-notification {
+  background-color: #1370BD;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Estilo para el elemento select */
+select {
+  /* Estilos generales del select */
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilo para las opciones del select */
+select option {
+  /* Estilos generales de las opciones */
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Estilo para la opción seleccionada */
+select option:checked {
+  /* Estilos de la opción seleccionada */
+  background-color: #4285f4;
+  color: #fff;
+}
+
+/* Estilo text area */
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Permite redimensionar verticalmente */
+}

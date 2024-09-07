@@ -1,0 +1,85 @@
+.view-materiales{
+    .btn-img{
+        padding: 1rem 0 0 0;
+    }
+    h1{
+        font-size: 2.4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .todos-materiales{
+        width: 80%;
+        margin: auto;
+        height: 30vh;
+        overflow-y: scroll;
+        article{
+            display: grid;
+            grid-template-columns: 2fr 6fr 2fr;
+            .img-material{
+                display: grid;
+                place-items: center;
+                img{
+                    width: 100%;
+                }
+            }
+            .contenido{
+                p{
+                    font-size: 1.8rem;
+                }
+                display: flex;
+                flex-direction: column;
+                margin-left: 1rem;
+                .capacidad-cantidad{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-right: 1rem;
+                }
+            }
+            .img-editar{
+                display: grid;
+                place-items: center;
+                img{
+                    cursor: pointer;
+                    width: 40%;
+                }
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+
+    .btns-agregar{
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        .mas{
+            width: 17%;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+.editar-material{
+    .btn-img{
+        padding: 1rem 0 0 0;
+    }
+    .update-material{
+        width: 90%;
+        margin: auto;
+    }
+    .btns-editar-material{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 2rem auto;
+        place-items: center;
+        button{
+            margin: 1rem 0;
+        }
+    }
+}

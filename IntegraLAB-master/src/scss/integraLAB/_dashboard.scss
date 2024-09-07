@@ -1,0 +1,98 @@
+.nav-dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: min-content;
+    .logo-tecnm{
+        padding: 1rem 0rem 0rem 1rem;
+        width: 80%;
+        img{
+            width: 50%;
+        }
+    }
+    .logo-integraLAB{
+        padding: 1rem 1rem 0rem 0rem;
+        width: 20%;
+        img{
+            width: 100%;
+        }
+    }
+}
+.dashboard{
+  // overflow-x: hidden;
+  .user-dashboard{
+    width: 55%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p{
+        font-size: 1.6rem;
+    }
+    img{
+        width: 30%;
+    }
+  }
+  section{
+    background-color: $azul-oscuro;
+    border-radius: 1.5rem;
+    width: 60%;
+    margin: 1.5rem auto auto auto;
+    padding: 2rem 2rem;
+    cursor: pointer;
+  }
+  article{
+    width: 80%;
+    margin: auto;
+  }
+  .logo-titulo{
+    background-color: $azul-medio;
+    border-radius: 2rem;
+    display: grid;
+    img{
+        place-self: center;
+        width: 50%;
+    }
+    p{
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    margin-bottom: 1.8rem;
+  }
+  .descripcion{
+    border-radius: 2rem;
+    background-color: $azul-medio;
+    p{
+        margin: 0;
+        padding: 0.8rem;
+        font-size: 1.4rem;
+    }
+  }
+  .bienvenida-profesor{
+    width: 70%;
+    margin: auto;
+    p{
+        font-size: 1.8rem;
+    }
+  }
+  .realizar-programacion,
+  .quejas,
+  .cerrar-sesion{
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+  }
+}
+.carrusel{
+  width: 60%;
+  margin: auto;
+  .carrusel-items{
+    display: flex;
+    overflow-x: hidden;
+    .carrusel-item{
+      max-width: 100%;
+      min-width: 100%;
+      margin-left: 1rem;
+    }
+  }
+}

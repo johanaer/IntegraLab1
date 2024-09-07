@@ -1,0 +1,1388 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/** Media Queries **/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+p {
+  color: #000000;
+  font-size: 2rem;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture {
+  width: 100%;
+  display: block;
+}
+
+h1, h2, h3 {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.6rem;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.blue-dark {
+  color: #0173AC;
+}
+
+.blue-medium {
+  color: #139DE3;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+.campo input {
+  border-radius: 2rem;
+  border: none;
+  background-color: #EFF7FC;
+}
+.campo label {
+  margin-top: 1.5rem;
+}
+
+.btn-principal {
+  background-color: #EF6B48;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  height: -moz-min-content;
+  height: min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+}
+
+.btn-principal:hover {
+  background-color: #eb4519;
+  cursor: pointer;
+}
+
+.btn-secundario {
+  background-color: #FFFFFF;
+  color: #000000;
+  border-color: #139DE3;
+  border-radius: 2rem;
+  height: -moz-min-content;
+  height: min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+}
+
+.btn-secundario:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+
+.btn-enlace {
+  color: #139DE3;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-img {
+  padding-top: 15%;
+  margin-left: 5%;
+}
+.btn-img button {
+  width: 13%;
+  background-color: transparent;
+  border: none;
+}
+.btn-img img {
+  cursor: pointer;
+}
+
+.filter {
+  filter: invert(100%);
+}
+
+.visible {
+  display: block;
+}
+
+.seleccionado {
+  background-color: #EF6B48;
+}
+
+.selected {
+  background-color: #0173AC;
+}
+
+.icono-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 2rem;
+}
+.icono-img .cerrar {
+  width: 10%;
+  height: 10%;
+  margin: auto;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.icono-img .img {
+  border-radius: 1.5rem;
+  width: 50%;
+  margin: auto;
+}
+
+.modal-overlay {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+}
+.modal-overlay .modal-form {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  border-radius: 2rem;
+}
+.modal-overlay .modal-form form {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.modal-overlay .modal-form form label {
+  text-align: left;
+}
+.modal-overlay .modal-form form input {
+  width: 100%;
+  border-radius: 1rem;
+  align-self: center;
+  border-color: #0173AC;
+  margin-bottom: 2rem;
+}
+.modal-overlay .modal-form form textarea {
+  width: 100%;
+  border-color: #0173AC;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  resize: none;
+  height: 9vh;
+}
+
+.select-reservacion {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.select-items {
+  background-color: #7faad1;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: aliceblue;
+  min-width: 15rem;
+  max-width: 15rem;
+  font-size: 1.5rem;
+}
+.select-items option {
+  font-size: 1.5rem;
+  height: 2.5rem;
+  color: black;
+}
+
+.container-fluid {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: rgb(222, 241, 251);
+  background: linear-gradient(0deg, rgb(222, 241, 251) 89%, rgb(19, 157, 227) 97%, rgb(19, 109, 188) 99%, rgb(32, 77, 161) 100%);
+}
+
+.index h1 {
+  margin-top: 6rem;
+}
+.index .img-center {
+  margin: 1rem 0 2rem 0;
+}
+.index .img-center img {
+  width: 50%;
+  margin: auto;
+}
+.index .modal-index {
+  border-radius: 2rem;
+  background-color: rgba(200, 200, 200, 0.5);
+  height: 30rem;
+}
+.index .modal-index p {
+  margin: 0;
+}
+.index .modal-index .inicio {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.index .modal-index .inicio:first-child {
+  padding-top: 2rem;
+}
+.index .modal-index form {
+  margin-top: 2rem;
+}
+.index .modal-index form button {
+  width: 70%;
+}
+
+.img-tecnm {
+  padding: 1rem;
+  max-width: 40%;
+}
+
+.img-header {
+  padding: 1rem;
+  max-width: 30%;
+}
+
+.login {
+  text-align: center;
+}
+.login h5, .login h6 {
+  margin: 0;
+}
+.login .modal {
+  width: 90%;
+  margin: auto;
+  border-radius: 2rem;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+.login .campo-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+.login .campo-login .icono-formulario {
+  max-width: 10%;
+}
+.login .campo-login .formulario {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+.login .campo-login .formulario label {
+  text-align: start;
+}
+.login .campo-login .formulario input {
+  width: 90%;
+  border: none;
+  border-radius: 1rem;
+  background-color: #EFF7FC;
+}
+.login button {
+  margin: 1rem 0;
+}
+
+.img-itq {
+  opacity: 60%;
+  max-width: 30%;
+  margin: 2rem auto auto auto;
+}
+
+.olvide-contraseña {
+  width: 90%;
+  margin: auto;
+}
+.olvide-contraseña button {
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+.olvide-contraseña h1 {
+  margin: 2rem 0;
+}
+
+.img-candado {
+  max-width: 25%;
+  margin: auto;
+}
+
+.nav-dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: -moz-min-content;
+  height: min-content;
+}
+.nav-dashboard .logo-tecnm {
+  padding: 1rem 0rem 0rem 1rem;
+  width: 80%;
+}
+.nav-dashboard .logo-tecnm img {
+  width: 50%;
+}
+.nav-dashboard .logo-integraLAB {
+  padding: 1rem 1rem 0rem 0rem;
+  width: 20%;
+}
+.nav-dashboard .logo-integraLAB img {
+  width: 100%;
+}
+
+.dashboard .user-dashboard {
+  width: 55%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dashboard .user-dashboard p {
+  font-size: 1.6rem;
+}
+.dashboard .user-dashboard img {
+  width: 30%;
+}
+.dashboard section {
+  background-color: #0173AC;
+  border-radius: 1.5rem;
+  width: 60%;
+  margin: 1.5rem auto auto auto;
+  padding: 2rem 2rem;
+  cursor: pointer;
+}
+.dashboard article {
+  width: 80%;
+  margin: auto;
+}
+.dashboard .logo-titulo {
+  background-color: #139DE3;
+  border-radius: 2rem;
+  display: grid;
+  margin-bottom: 1.8rem;
+}
+.dashboard .logo-titulo img {
+  place-self: center;
+  width: 50%;
+}
+.dashboard .logo-titulo p {
+  margin: 0;
+  font-size: 1.8rem;
+}
+.dashboard .descripcion {
+  border-radius: 2rem;
+  background-color: #139DE3;
+}
+.dashboard .descripcion p {
+  margin: 0;
+  padding: 0.8rem;
+  font-size: 1.4rem;
+}
+.dashboard .bienvenida-profesor {
+  width: 70%;
+  margin: auto;
+}
+.dashboard .bienvenida-profesor p {
+  font-size: 1.8rem;
+}
+.dashboard .realizar-programacion,
+.dashboard .quejas,
+.dashboard .cerrar-sesion {
+  display: grid;
+  place-items: center;
+  margin-bottom: 2rem;
+}
+
+.carrusel {
+  width: 60%;
+  margin: auto;
+}
+.carrusel .carrusel-items {
+  display: flex;
+  overflow-x: hidden;
+}
+.carrusel .carrusel-items .carrusel-item {
+  max-width: 100%;
+  min-width: 100%;
+  margin-left: 1rem;
+}
+
+.laboratorio .modal {
+  width: 85%;
+  margin: 3rem auto auto auto;
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 1.5rem;
+}
+.laboratorio .modal h1 {
+  padding: 1rem 0;
+  font-size: 2.6rem;
+}
+
+.contenido-laboratorio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenido-laboratorio h4 {
+  margin: 1rem 0 3rem 0;
+  font-size: 1.4rem;
+}
+.contenido-laboratorio img {
+  width: 60%;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.btn-laboratorio {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.btn-laboratorio button {
+  background-color: transparent;
+  border-radius: 2rem;
+  border-color: #139DE3;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
+
+.actividades {
+  padding: 15vh 0 0 0;
+}
+.actividades .modal-actividades {
+  width: 90%;
+  margin: auto;
+  background-color: rgba(200, 200, 200, 0.3);
+  border-radius: 2rem;
+  height: 70vh;
+}
+.actividades .modal-actividades h1 {
+  font-size: 2.4rem;
+}
+.actividades .modal-actividades .todas-actividades {
+  height: 57vh;
+  overflow-y: scroll;
+}
+.actividades .modal-actividades .todas-actividades .modal-actividad {
+  background-color: #EFF7FC;
+  width: 70%;
+  margin: auto;
+  border-radius: 2rem;
+}
+.actividades .modal-actividades .todas-actividades .modal-actividad h4 {
+  font-size: 1.6rem;
+}
+.actividades .modal-actividades .todas-actividades .modal-actividad p {
+  font-size: 1.6rem;
+  margin: 0;
+}
+.actividades .btn-img {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.oculto {
+  display: none;
+}
+
+.selected {
+  background-color: #0173AC;
+}
+
+.encargados {
+  height: 100vh;
+}
+.encargados .modal-encargados {
+  padding: 5rem 0;
+  height: 100vh;
+}
+.encargados .modal-encargados .user {
+  cursor: pointer;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.encargados .modal-encargados .user img {
+  width: 30%;
+  height: 30%;
+  align-self: center;
+}
+.encargados .btns-acciones {
+  margin: 3rem auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.encargados .btns-acciones button {
+  width: 100%;
+}
+.encargados .cerrar-sesion {
+  width: 50%;
+  margin: 0 auto;
+}
+.encargados .cerrar-sesion button {
+  width: 100%;
+}
+
+.user-encargados .btn-img {
+  padding: 1rem 0 0 0;
+}
+.user-encargados .icono-img {
+  width: 50%;
+  padding: 0;
+  margin: auto;
+}
+.user-encargados .name-user {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+.user-encargados .name-user p {
+  margin: 0;
+}
+.user-encargados .name-user button {
+  width: 15%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.user-encargados .name-user button img {
+  width: 100%;
+}
+.user-encargados .container p {
+  width: 90%;
+  margin: auto;
+}
+.user-encargados .btn-eliminar {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-bottom: 2rem;
+}
+
+.view-update-user h1 {
+  font-size: 2.4rem;
+}
+.view-update-user .btn-img {
+  padding: 1rem 0 0 0;
+}
+.view-update-user .btn-añadir {
+  padding: 2rem 0 1rem 0;
+  display: grid;
+  place-content: center;
+}
+
+.mostrar-aulas h1 {
+  font-size: 3rem;
+}
+.mostrar-aulas .modal-aulas-scroll {
+  height: 40vh;
+  overflow-y: scroll;
+}
+.mostrar-aulas .modal-aulas-scroll .aula {
+  border: 1px solid black;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.mostrar-aulas .modal-aulas-scroll .aula p {
+  margin: 0;
+}
+.mostrar-aulas .modal-aulas-scroll .aula .line-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mostrar-aulas .modal-aulas-scroll .aula .line-one button {
+  display: flex;
+  place-self: center;
+  height: 13%;
+  width: 13%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.mostrar-aulas .modal-aulas-scroll .dias button {
+  margin-left: 1rem;
+}
+.mostrar-aulas .btn-dias {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+}
+.mostrar-aulas .btns-info-add {
+  padding: 2rem 0;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.mostrar-aulas .btns-info-add .info {
+  width: 17%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 3rem;
+}
+.mostrar-aulas .btns-info-add .add {
+  place-self: center;
+  width: 65%;
+}
+
+.add-info-aulas h4 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.add-info-aulas .text-area {
+  width: 80%;
+  margin: auto;
+}
+.add-info-aulas .text-area textarea {
+  width: 100%;
+  height: 10vh;
+  resize: none;
+  border: 1px solid #0173AC;
+}
+.add-info-aulas .btn-img {
+  padding: 1rem 0;
+}
+.add-info-aulas .btn-img:last-child {
+  padding: 0;
+  display: grid;
+  place-items: center;
+  padding: 1rem 0;
+}
+
+.add-aula .btn-img {
+  padding: 1rem 0;
+}
+.add-aula .form-add .campo-add {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.add-aula .form-add .campo-add input {
+  border-radius: 1rem;
+}
+.add-aula .form-add .btns-dias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.add-aula .form-add .btns-dias button {
+  color: white;
+  background-color: #0173AC;
+  border: none;
+  border-radius: 1rem;
+  width: 11%;
+  height: 11%;
+  cursor: pointer;
+}
+.add-aula .form-add .btns-dias button:hover {
+  background-color: black;
+}
+.add-aula .form-add .panel-horario-add {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  margin: 2rem auto;
+}
+.add-aula .form-add .panel-horario-add p {
+  margin: 0;
+}
+.add-aula .form-add .panel-horario-add input {
+  place-self: center;
+  width: 40%;
+  height: 10%;
+  border-radius: 1rem;
+}
+.add-aula .btn-add-aula {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.add-aula .mantenimiento {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto auto 2rem auto;
+}
+.add-aula .btn-eliminar-aula {
+  display: grid;
+  place-items: center;
+  padding-bottom: 2rem;
+}
+
+.mostrar-profesor h1 {
+  font-size: 2.4rem;
+}
+.mostrar-profesor h2 {
+  font-size: 2.2rem;
+}
+.mostrar-profesor .btn-img {
+  padding: 1rem 0 0 0;
+}
+.mostrar-profesor .profesores {
+  height: 30vh;
+  width: 80%;
+  margin: auto;
+  overflow-y: scroll;
+}
+.mostrar-profesor .profesores article {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  margin: 0.5rem 0;
+}
+.mostrar-profesor .profesores article img {
+  width: 20%;
+  height: 20%;
+}
+.mostrar-profesor .profesores article p {
+  margin: 0 0 0 1rem;
+}
+.mostrar-profesor .btns-agregar {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.mostrar-profesor .btns-agregar .mas {
+  width: 17%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.add-profesor .btn-img {
+  padding: 1rem 0 0 0;
+}
+.add-profesor h1 {
+  font-size: 2.4rem;
+}
+.add-profesor .btn-añadir {
+  display: grid;
+  place-items: center;
+  margin: 2rem auto;
+}
+
+.ver-profesor-click .btn-img {
+  padding: 1rem 0 0 0;
+}
+.ver-profesor-click .icon-ver-profesor {
+  display: grid;
+  place-items: center;
+}
+.ver-profesor-click .icon-ver-profesor img {
+  width: 35%;
+}
+.ver-profesor-click .info-profesor {
+  width: 80%;
+  margin: auto;
+}
+.ver-profesor-click .info-profesor p {
+  margin: 0;
+}
+.ver-profesor-click .info-profesor .profesor-icono-editar {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  justify-content: space-between;
+}
+.ver-profesor-click .info-profesor .profesor-icono-editar img {
+  width: 10%;
+}
+.ver-profesor-click .info-profesor .lista-profesores {
+  height: 10vh;
+  overflow-y: scroll;
+}
+.ver-profesor-click .info-profesor .lista-profesores article {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.ver-profesor-click .info-profesor .lista-profesores article p:first-child {
+  cursor: pointer;
+}
+.ver-profesor-click .info-profesor .lista-profesores article p {
+  font-size: 1.5rem;
+}
+.ver-profesor-click .btn-añadir {
+  display: grid;
+  place-items: center;
+  margin: 2rem auto;
+}
+
+.añadir-aula-profesor .btn-img {
+  padding: 1rem 0 0 0;
+}
+.añadir-aula-profesor .contenido {
+  width: 85%;
+  margin: auto;
+}
+.añadir-aula-profesor .contenido .select {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  place-items: center;
+}
+.añadir-aula-profesor .contenido .select select {
+  background-color: white;
+  width: 50%;
+  text-align: center;
+}
+.añadir-aula-profesor .contenido .dias {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.añadir-aula-profesor .contenido .dias button {
+  color: white;
+  background-color: #0173AC;
+  border: none;
+  border-radius: 1rem;
+  width: 15%;
+  height: 15%;
+  cursor: pointer;
+}
+.añadir-aula-profesor .contenido .dias button:hover {
+  background-color: black;
+}
+.añadir-aula-profesor .contenido .panel-horario {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  margin: 2rem auto;
+}
+.añadir-aula-profesor .contenido .panel-horario p {
+  margin: 0;
+}
+.añadir-aula-profesor .contenido .panel-horario input {
+  place-self: center;
+  width: 40%;
+  height: 10%;
+  border-radius: 1rem;
+}
+.añadir-aula-profesor .contenido .btns-agregar {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.añadir-aula-profesor .contenido .btns-agregar .mas {
+  width: 17%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.view-materiales .btn-img {
+  padding: 1rem 0 0 0;
+}
+.view-materiales h1 {
+  font-size: 2.4rem;
+}
+.view-materiales h2 {
+  font-size: 2rem;
+}
+.view-materiales .todos-materiales {
+  width: 80%;
+  margin: auto;
+  height: 30vh;
+  overflow-y: scroll;
+}
+.view-materiales .todos-materiales article {
+  display: grid;
+  grid-template-columns: 2fr 6fr 2fr;
+}
+.view-materiales .todos-materiales article .img-material {
+  display: grid;
+  place-items: center;
+}
+.view-materiales .todos-materiales article .img-material img {
+  width: 100%;
+}
+.view-materiales .todos-materiales article .contenido {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.view-materiales .todos-materiales article .contenido p {
+  font-size: 1.8rem;
+}
+.view-materiales .todos-materiales article .contenido .capacidad-cantidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+.view-materiales .todos-materiales article .img-editar {
+  display: grid;
+  place-items: center;
+}
+.view-materiales .todos-materiales article .img-editar img {
+  cursor: pointer;
+  width: 40%;
+}
+.view-materiales .todos-materiales article p {
+  margin: 0;
+}
+.view-materiales .btns-agregar {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.view-materiales .btns-agregar .mas {
+  width: 17%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.editar-material .btn-img {
+  padding: 1rem 0 0 0;
+}
+.editar-material .update-material {
+  width: 90%;
+  margin: auto;
+}
+.editar-material .btns-editar-material {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 2rem auto;
+  place-items: center;
+}
+.editar-material .btns-editar-material button {
+  margin: 1rem 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+header .logo-admin-registro {
+  max-width: 40%;
+  padding: 1rem 2rem 0 0;
+}
+
+.admin-registro .btn-volver {
+  padding: 0;
+  margin-left: 5%;
+}
+.admin-registro h1 {
+  margin: 10vh 0;
+  font-size: 2.2rem;
+}
+.admin-registro .modal-registro {
+  width: 90%;
+  margin: auto;
+  background-color: rgba(200, 200, 200, 0.3);
+  border-radius: 2rem;
+}
+.admin-registro .modal-registro form {
+  padding: 2rem 0;
+}
+.admin-registro .modal-registro button {
+  font-size: 1.6rem;
+  display: flex;
+  justify-self: center;
+  width: 60%;
+  margin: 5vh auto 0 auto;
+}
+/*# sourceMappingURL=app.css.map */

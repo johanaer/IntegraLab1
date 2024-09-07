@@ -1,0 +1,188 @@
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+.blue-dark{
+    color: $azul-oscuro;
+}
+.blue-medium{
+    color: $azul-medio;
+}
+.bold{
+    font-weight: $bold;
+}
+.center{
+    text-align: center;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    input{
+        border-radius: 2rem;
+        border: none;
+        background-color: $azul-claro;
+    }
+    label{
+        margin-top: 1.5rem;
+    }
+}
+.btn-principal{
+    background-color: $naranja;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    height: min-content;
+    width: min-content;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+}
+.btn-principal:hover{
+    background-color: darken($naranja, 10);
+    cursor: pointer;
+}
+.btn-secundario{
+    background-color: $blanco;
+    color: $negro;
+    border-color: $azul-medio;
+    border-radius: 2rem;
+    height: min-content;
+    width: min-content;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+}
+.btn-secundario:hover{
+    background-color: darken($blanco, 10);
+    cursor: pointer;
+}
+.btn-enlace{
+    color: $azul-medio;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.btn-img{
+    padding-top: 15%;
+    margin-left: 5%;
+    button{
+        width: 13%;
+        background-color: transparent;
+        border: none;
+    }
+    img{
+        cursor: pointer;
+    }
+}
+.filter{
+    filter: invert(100%);
+}
+
+.visible{
+    display: block;
+}
+
+.seleccionado{
+    background-color: $naranja;
+}
+.selected{
+    background-color: $azul-oscuro;
+}
+.icono-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    .cerrar{
+        width: 10%;
+        height: 10%;
+        margin: auto;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+    .img{
+        border-radius: 1.5rem;
+        width: 50%;
+        margin: auto;
+    }
+}
+.modal-overlay{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(0, 0, 0, 50%);
+    position: fixed;
+    top: 0;
+    .modal-form{
+        width: 80%;
+        margin: auto;
+        background-color: white;
+        border-radius: 2rem;
+        form{
+            width: 80%;
+            margin: auto;
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            label{
+                text-align: left;
+            }
+            input{
+                width: 100%;
+                border-radius: 1rem;
+                align-self: center;
+                border-color: $azul-oscuro;
+                margin-bottom: 2rem;
+            }
+            textarea{
+                width: 100%;
+                border-color: $azul-oscuro;
+                border-radius: 1rem;
+                margin-bottom: 2rem;
+                resize: none;
+                height: 9vh;
+            }
+        }
+    }
+}
+
+.select-reservacion {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.select-items {
+    background-color: #7faad1;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: aliceblue;
+    min-width: 15rem;
+    max-width: 15rem;
+    font-size: 1.5rem;
+    option {
+        font-size: 1.5rem;
+        height: 2.5rem;
+        color: black;
+    }
+}
+
+.container-fluid {
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(222,241,251);
+    background: linear-gradient(
+      0deg, rgba(222,241,251,1) 
+      89%, rgba(19,157,227,1) 
+      97%, rgba(19,109,188,1) 
+      99%, rgba(32,77,161,1) 100%);
+}
